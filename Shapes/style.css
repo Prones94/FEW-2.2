@@ -1,0 +1,461 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 100px  min-content auto;
+    width: 400px;
+    height: 400px;
+    position: relative;
+
+}
+
+#redbox {
+    background-color: red;
+
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+#redcircle {
+    background-color: red;
+
+    width: 60px;
+    height: 60px;
+    margin: 20px 20px;
+    border-radius: 100%;
+}
+
+#blackborder {
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border: 3px solid;
+}
+
+#curvedone {
+    background-color: red;
+    border: 3px black solid;
+
+    width: 80px;
+    height: 80px;
+    margin: 12px;
+    border-radius: 0% 0% 0% 50% ;
+}
+
+#green {
+    background-color:green;
+
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 0% 50% 50% 50%;
+}
+
+#lemon {
+    background-color: yellow;
+    border: 3px solid black;
+
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 0% 50% 0% 50%;
+}
+
+#blackbox{
+    border: 3px solid black;
+
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    position: relative;
+
+}
+
+#blackbox > div {
+    background-color: black;
+
+    width: 35px;
+    height: 10px;
+    transform: translate(20px, 15px);
+}
+
+#bluebox {
+    background-color: blue;
+    border: 3px solid black;
+
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    position: relative;
+
+}
+
+#bluebox > div {
+    background-color: yellow;
+
+    width: 50px;
+    height: 15px;
+    margin: 10px;
+    transform: translate(6px, 9px);
+}
+
+#redcross {
+    background-color: red;
+    border: 3px solid black;
+
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    position: relative
+}
+
+#redcross div:first-child {
+    background-color: white;
+    
+    width: 45px;
+    height: 15px;
+
+    position: absolute;
+    transform: translate(17px, 32px);
+}
+
+#redcross div:last-child {
+    background: white;
+
+    width: 15px;
+    height: 45px;
+    
+    position: absolute;
+    transform: translate(32px,17px);
+}
+
+#exe {
+    border: 3px solid black;
+
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+
+    position: relative;
+}
+
+#exe div:first-child {
+    background-color: black;
+
+    width: 45px;
+    height: 13px;
+
+    position: absolute;
+    transform: translate(18px, 32px) rotate(45deg);
+}
+
+#exe div:last-child {
+    background-color: black;
+
+    width: 45px;
+    height: 13px;
+
+    position: absolute;
+    transform: translate(18px,32px) rotate(135deg);
+}
+
+#circleexe {
+    border: 3px solid black;
+
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 100%;
+    position: relative;
+}
+
+#circleexe div:first-child {
+    background-color: black;
+
+    width: 45px;
+    height: 13px;
+
+    position: absolute;
+    transform: translate(17px, 33px) rotate(45deg);
+}
+
+#circleexe div:last-child {
+    background-color: black;
+
+    width: 45px;
+    height: 13px;
+
+    position: absolute;
+    transform: translate(17px,33px) rotate(135deg);
+}
+
+#arrow {
+    border: 3px solid black;
+
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 100%;
+    position: relative;
+}
+
+#arrow div:first-child {
+    border: 3px solid black;
+
+    width: 35px;
+    transform: translate(16px,38px)
+}
+
+#arrow div:nth-child(2) {
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+
+    width: 25px;
+    height: 25px;
+    transform: translate(26px, 20px) rotate(-45deg);
+}
+
+#robot {
+    background-color: cornflowerblue;
+    border: 3px solid black;
+
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    position: relative;
+}
+
+#robot div:first-child {
+    background-color: red;
+    border: 4px solid black;
+
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    
+    position: absolute;
+    transform: translate(16px, 17px);
+}
+
+#robot div:nth-child(2) {
+    background-color: red;
+    border: 4px solid black;
+
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    
+    position: absolute;
+    transform: translate(44px, 17px);
+}
+
+#robot div:last-child {
+    background-color: red;
+    border: 4px solid black;
+
+    width: 42px;
+    height: 9px;
+    border-radius: 34%;
+
+    position: absolute;
+    transform: translate(15px, 43px);
+}
+
+#vampire {
+    border: 6px solid black;
+
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 20px 20px 30px 30px;
+    position: relative;
+}
+
+#vampire div:first-of-type {
+    border: 5px solid black;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 0% 50% 50% 50%;
+    transform: translate(12px, 20px);
+}
+
+#vampire div~div {
+    border: 5px solid black;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: translate(45px, 20px);
+}
+
+#vampire div:last-child {
+    width: 30px;
+    height: 0px;
+    border-radius: 0;
+    border-bottom: 7px solid hidden;
+    position: absolute;
+    transform: translate(20px, 55px);
+}
+
+#raven {
+    background-color: lightblue;
+    border: 5px solid black;
+
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    position: relative;
+}
+
+#raven div:first-of-type {
+    background-color: #223E7F;
+    border-radius: 50% 50% 50% 0%;
+
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transform: translate(20px,35px);
+}
+
+#raven div #wing {
+    background-color: #5F8DCE;
+
+    border-right: 1px solid;
+    width: 30px;
+    height: 30px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    position: absolute;
+    transform: translate(5px,5px);
+}
+#raven #head {
+    background-color: #223E7F;
+    border-radius: 50% 50% 0% 50%;
+
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    transform: translate(45px,20px) rotate(-45deg);
+}
+
+#raven #head #eye {
+    background-color: white;
+    border-radius: 100%;
+
+    height: .5px;
+    width: .5px;
+    border: 2px solid white;
+    position: absolute;
+    transform: translate(9px, 6px);
+}
+
+#kirby {
+    background-color: lightpink;
+    background: linear-gradient(180deg,lightpink,white);
+    border: 5px solid black;
+
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    position: relative;
+}
+
+#kirby #left {
+    background-color: #950025;
+    border: 1px solid black;
+
+    height: 13px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    transform: rotate(125deg) translate(35px, -45px);
+
+}
+
+#kirby #right {
+    background-color: #950025;
+    border: 1px solid black;
+
+    height: 13px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    transform: rotate(75deg) translate(63px,-20px);
+}
+
+#kirby #body {
+    background-color: #F47EA9;
+    
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border-top: 1px solid black;
+    position: absolute;
+    transform: translate(18px,1px);
+}
+
+#kirby #rightarm {
+    background-color: #F47EA9;
+    border-radius: 41% 100% 0% 100% / 38% 100% 0% 100% ;
+    height: 20px;
+    width: 20px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    position: absolute;
+    transform: translate(8px, 25px);
+}
+
+#kirby #leftarm {
+    background-color: #F47EA9;
+    border-radius: 87% 25% 87% 0% / 89% 32% 89% 25%  ;
+    height: 20px;
+    width: 20px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform: translate(50px,30px);
+}
+
+#kirby #body>div:first-of-type {
+    background-color: black;
+    border-radius: 50%;
+
+    height: 10px;
+    width: 4px;
+    transform: translate(10px, 9px);
+    position: absolute;
+}
+
+#kirby #body>div:nth-child(2) {
+    background-color: black;
+    border-radius: 50%;
+
+    height: 10px;
+    width: 4px;
+    transform: translate(30px, 9px);
+    position: absolute;
+}
+
+#kirby #body #mouth {
+    background-color: #A61B35;
+    border: 1px solid black;
+    height: 23px;
+    width: 17px;
+    border-radius:50%  ;
+    position: absolute;
+    transform: translate(13px,16px);
+
+}
