@@ -459,3 +459,14 @@ body {
     transform: translate(13px,16px);
 
 }
+
+#kirby #body #mouth #tongue {
+    background-color: rgb(128, 39, 55);
+    border: .3px solid black;
+    opacity: .3;
+    height: 13px;
+    width:15px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(10px);
+}
