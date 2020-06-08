@@ -1,0 +1,115 @@
+header {
+    font-family: 'PT Sans Caption', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 10% auto;
+    height: 400px;
+    width: 400px;
+    border: 5px solid black;
+    border-radius: 50%;
+    background-color: #FFAE00;
+}
+
+.handle {
+    background-color: #F0F0F0;
+    width: 98px;
+    height: 145px;
+    position: relative;
+    transform: translateY(135px) translateX(-200px);
+    border-radius: 29% 13% 15% 63% / 32% 18% 10% 69% ;
+    z-index: 3;
+}
+.handle::after {
+    content: '';
+    background-color: #FFAE00;
+    width: 75px;
+    height: 123px;
+    position: absolute;
+    transform: translateX(11px) translateY(12px);
+    border-radius: 29% 42% 34% 76% / 32% 39% 42% 66%;
+}
+
+.coffee-cup {
+    width: 170px;
+    height: 200px;
+    background-color: #F0F0F0;
+    border: 2px solid #F0F0F0;
+    position: relative;
+    border-radius: 100% 100% 26% 29% / 22% 18% 12% 15% ;
+    transform: translateY(108px) translateX(46px);
+    z-index: 5;
+}
+.coffee {
+    width: 165px;
+    height: 30px;
+    position: absolute;
+    border-radius: 100% ;
+    background-color: #CF9F6E;
+    transform: translate(4px, 8px);
+    
+}
+
+.coffee-shadow {
+width: 165px;
+height: 40px;
+background-color: #E6E6E6;
+border-radius: 100%;
+position: absolute;
+transform: translate(4px);
+}
+
+.coffee-bottom {
+    width: 140px;
+    height: 80px;
+    position: absolute;
+    background-color: #F0F0F0;
+    transform: translateY(1030px);
+}
+steam {
+    width: 2px;
+      height: 70px;
+      background: white;
+      position: relative;
+      animation: waft 2s linear infinite;
+      filter: blur(5px);
+      margin-top:10px;
+  }
+  
+  .steam-1 {
+    left:46%;
+  }
+  
+  .steam-2 {
+    left:48%;
+  }
+  
+  .steam-3 {
+    left:50%;
+  }
+  
+  .steam-4 {
+    left:52%;
+  }
+  
+  @keyframes waft {
+      0% {
+          transform:translate3d(0,0,0) scale(1);
+          opacity:1;
+      }
+      
+          100% {
+          transform: translate3d(0, -200px,0)  scale(3) ;
+      opacity:0;
+  
+      }
+  }
+
+
