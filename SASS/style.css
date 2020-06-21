@@ -5,6 +5,7 @@
   border: 1px solid;
   position: relative;
 }
+
 .container > div {
   position: absolute;
   border-radius: 0 70% 40% 70%;
@@ -13,81 +14,171 @@
   height: 120px;
   left: 10px;
   top: 50px;
-  transform: rotate(45deg);
-  transform-origin: 90px 90px;
-  animation-duration: 6000ms;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 90px 90px;
+          transform-origin: 90px 90px;
+  -webkit-animation-duration: 6000ms;
+          animation-duration: 6000ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
+
 .container > div:nth-child(1) {
-  animation-name: petal-1;
+  -webkit-animation-name: petal-1;
+          animation-name: petal-1;
   background-color: rgba(255, 0, 0, 0.2);
 }
+
 .container > div:nth-child(2) {
-  animation-name: petal-2;
+  -webkit-animation-name: petal-2;
+          animation-name: petal-2;
   background-color: rgba(255, 255, 0, 0.2);
 }
+
 .container > div:nth-child(3) {
-  animation-name: petal-3;
+  -webkit-animation-name: petal-3;
+          animation-name: petal-3;
   background-color: rgba(0, 255, 0, 0.2);
 }
+
 .container > div:nth-child(4) {
-  animation-name: petal-4;
+  -webkit-animation-name: petal-4;
+          animation-name: petal-4;
   background-color: rgba(0, 255, 255, 0.2);
 }
+
 .container > div:nth-child(5) {
-  animation-name: petal-5;
+  -webkit-animation-name: petal-5;
+          animation-name: petal-5;
   background-color: rgba(0, 0, 255, 0.2);
+}
+
+@-webkit-keyframes petal-1 {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
 }
 
 @keyframes petal-1 {
   0% {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   100% {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
 }
+
+@-webkit-keyframes petal-2 {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 @keyframes petal-2 {
   0% {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   100% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
+
+@-webkit-keyframes petal-3 {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
 @keyframes petal-3 {
   0% {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   100% {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
 }
+
+@-webkit-keyframes petal-4 {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
 @keyframes petal-4 {
   0% {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   100% {
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
+
+@-webkit-keyframes petal-5 {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+}
+
 @keyframes petal-5 {
   0% {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   100% {
-    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
   }
 }
+
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body, html {
   height: 100%;
 }
-
 /*# sourceMappingURL=style.css.map */
